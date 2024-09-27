@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Member Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="#">Lab1</a>
+                    <ul class="submenu">
+                        <li><a href="requirement.html">Requirement</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="gym-management.html">Implement</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Gym Member Management</h1>
+
+        <div class="form-container">
+            <h2>Add New Member</h2>
+            <input type="text" id="memberName" placeholder="Member Name">
+            <input type="text" id="memberEmail" placeholder="Email">
+            <input type="number" id="memberAge" placeholder="Age">
+            <button onclick="addMember()">Add Member</button>
+        </div>
+
+        <div class="form-container">
+            <h2>Search Member</h2>
+            <input type="text" id="searchMember" placeholder="Search for a member" oninput="searchMember()">
+        </div>
+        
+        <h2>Member List</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Member Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="memberList">
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>23130081 - Tran Quang Duy</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
