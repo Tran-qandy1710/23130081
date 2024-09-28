@@ -1,47 +1,45 @@
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
     color: #333;
-    margin: 0;
-    padding: 0;
-}
-
-header {
+  }
+  
+  header {
     background-color: #333;
     color: #fff;
     padding: 15px 0;
-}
-
-nav ul {
-    list-style-type: none;
+  }
+  
+  nav ul {
+    list-style: none;
     text-align: center;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline-block;
     margin-right: 20px;
     position: relative;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     text-decoration: none;
     color: #fff;
     font-size: 18px;
     padding: 10px;
     transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
+  }
+  
+  nav ul li a:hover {
     background-color: #444;
-}
-
-.submenu {
+  }
+  
+  .submenu {
     display: none;
     position: absolute;
     background-color: #333;
@@ -49,48 +47,48 @@ nav ul li a:hover {
     top: 100%;
     left: 0;
     width: 150px;
-}
-
-.submenu li {
+  }
+  
+  .submenu li {
     display: block;
-}
-
-.dropdown:hover .submenu {
+  }
+  
+  nav ul li:hover .submenu {
     display: block;
-}
-
-.submenu a {
+  }
+  
+  .submenu a {
     color: #fff;
     padding: 10px;
     display: block;
     text-align: left;
-}
-
-.submenu a:hover {
+  }
+  
+  .submenu a:hover {
     background-color: #555;
-}
-
-section {
+  }
+  
+  section {
     text-align: center;
     margin: 50px 20px;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
+  }
+  
+  h1 {
     color: #444;
     font-size: 36px;
     margin-bottom: 20px;
-}
-
-p {
+  }
+  
+  p {
     font-size: 18px;
     color: #666;
-}
-
-footer {
+  }
+  
+  footer {
     text-align: center;
     padding: 20px;
     background-color: #333;
@@ -98,36 +96,36 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-main {
+  }
+  
+  main {
     max-width: 1000px;
     margin: 50px auto;
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
+  }
+  
+  h1, h2 {
     color: #444;
     margin-bottom: 20px;
-}
-
-.form-container {
+  }
+  
+  .form-container {
     margin-bottom: 20px;
-}
-
-input[type="text"], input[type="number"] {
+  }
+  
+  input[type="text"], input[type="number"] {
     width: calc(100% - 20px);
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-}
-
-button {
+  }
+  
+  button {
     padding: 10px 20px;
     background-color: #28a745;
     color: white;
@@ -135,103 +133,43 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-}
-
-button.delete {
+  }
+  
+  button.delete {
     background-color: #dc3545;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: #218838;
-}
-
-button.delete:hover {
+  }
+  
+  button.delete:hover {
     background-color: #c82333;
-}
-
-table {
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
-}
-
-table, th, td {
+  }
+  
+  table, th, td {
     border: 1px solid #ccc;
-}
-
-th, td {
+  }
+  
+  th, td {
     padding: 15px;
     text-align: left;
-}
-
-th {
+  }
+  
+  th {
     background-color: #f2f2f2;
-}
-
-tbody tr:nth-child(even) {
+  }
+  
+  tbody tr:nth-child(even) {
     background-color: #f9f9f9;
-}
-
-tbody tr:hover {
+  }
+  
+  tbody tr:hover {
     background-color: #f1f1f1;
-}
-nav ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    position: relative;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #444;
-}
-
-.submenu {
-    display: none;
-    position: absolute;
-    background-color: #333;
-    list-style: none;
-    top: 100%;
-    left: 0;
-    width: 150px;
-}
-
-.submenu li {
-    display: block;
-}
-
-nav ul li:hover .submenu {
-    display: block;
-}
-
-.submenu a {
-    color: #fff;
-    padding: 10px;
-    display: block;
-    text-align: left;
-}
-
-.submenu a:hover {
-    background-color: #555;
-}
-
-section {
-    text-align: center;
-    margin: 50px 20px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+  }
