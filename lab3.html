@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,154 +8,160 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
 
-<header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li>
-                <a href="labs.html">Labs</a>
-                <ul class="submenu2">
-                    <li><a href="lab1.html">Lab1</a></li>
-                    <li><a href="lab2.html">Lab2</a></li>
-                    <li><a href="lab3.html" class="active">Lab3</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Project</a>
-                <ul class="submenu">
-                    <li><a href="requirement.html">Requirement</a></li>
-                    <li><a href="design.html">Design</a></li>
-                    <li><a href="gym-management.html">Implement</a></li>
-                </ul>
-            </li>
-        </ul>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="labs.html">Labs</a>
+                    <ul class="submenu2">
+                        <li><a href="lab1.html">Lab1</a></li>
+                        <li><a href="lab2.html">Lab2</a></li>
+                        <li><a href="lab3.html" class="active">Lab3</a></li>
+                        <li> <a href="lab4.html">Lab4</a></li>
+
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Project</a>
+                    <ul class="submenu">
+                        <li><a href="requirement.html">Requirement</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="gym-management.html">Implement</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <nav id="nav2">
+        <div id="nav2-tab">
+            <a href="lab1.html">Lab1</a>
+            <a href="lab2.html">Lab2</a>
+            <a href="lab3.html" class="active">Lab3</a>
+            <a href="lab4.html">Lab4</a>
+
+        </div>
     </nav>
-</header>
 
-<nav id="nav2">
-    <div id="nav2-tab">
-        <a href="lab1.html">Lab1</a>
-        <a href="lab2.html">Lab2</a>
-        <a href="lab3.html" class="active">Lab3</a>
-    </div>
-</nav>
+    <section>
+        <h2>Select a Subject and Share Materials</h2>
 
-<section>
-    <h2>Select a Subject and Share Materials</h2>
-        
-    <div class="subject-container">
+        <div class="subject-container">
 
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Mathematics</h3>
-            <ul>
-                <li><a href="#">Lesson 1: Algebra Basics</a></li>
-                <li><a href="#">Exercise 1: Algebra Exercises</a></li>
-                <li><a href="#">Reference: Algebra Reference</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Mathematics</h3>
+                <ul>
+                    <li><a href="#">Lesson 1: Algebra Basics</a></li>
+                    <li><a href="#">Exercise 1: Algebra Exercises</a></li>
+                    <li><a href="#">Reference: Algebra Reference</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Java Programming</h3>
+                <ul>
+                    <li><a href="#">Lesson 1: Java Introduction</a></li>
+                    <li><a href="#">Exercise 1: Java OOP</a></li>
+                    <li><a href="#">Reference: Java Documentation</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Python Programming</h3>
+                <ul>
+                    <li><a href="#">Lesson 1: Python Basics</a></li>
+                    <li><a href="#">Exercise 1: Python for Data Science</a></li>
+                    <li><a href="#">Reference: Python Official Docs</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Front-End Engineering (FEE)</h3>
+                <ul>
+                    <li><a href="#">Lesson 1: HTML & CSS</a></li>
+                    <li><a href="#">Exercise 1: Building Responsive Pages</a></li>
+                    <li><a href="#">Reference: FEE Guide</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Data Structures and Algorithms</h3>
+                <ul>
+                    <li><a href="#">Lesson: Introduction to Data Structures</a></li>
+                    <li><a href="#">Exercise: Implementing Linked Lists</a></li>
+                    <li><a href="#">Reference: Data Structures Reference Guide</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Database Management Systems</h3>
+                <ul>
+                    <li><a href="#">Lesson: SQL Basics</a></li>
+                    <li><a href="#">Exercise: Creating and Managing Databases</a></li>
+                    <li><a href="#">Reference: Database Management Systems Documentation</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Web Development</h3>
+                <ul>
+                    <li><a href="#">Lesson: Introduction to Web Development</a></li>
+                    <li><a href="#">Exercise: Building a Simple Website</a></li>
+                    <li><a href="#">Reference: Web Development Resources</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Software Engineering</h3>
+                <ul>
+                    <li><a href="#">Lesson: Software Development Life Cycle</a></li>
+                    <li><a href="#">Exercise: Agile Methodologies</a></li>
+                    <li><a href="#">Reference: Software Engineering Principles</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Operating Systems</h3>
+                <ul>
+                    <li><a href="#">Lesson: Introduction to Operating Systems</a></li>
+                    <li><a href="#">Exercise: Process Management</a></li>
+                    <li><a href="#">Reference: Operating Systems Concepts</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
+            <div class="subject">
+                <h3><i class="fa-solid fa-book"></i> Networking Fundamentals</h3>
+                <ul>
+                    <li><a href="#">Lesson: Basics of Networking</a></li>
+                    <li><a href="#">Exercise: Setting Up a Local Network</a></li>
+                    <li><a href="#">Reference: Networking Protocols and Standards</a></li>
+                </ul>
+                <button class="upload-btn">Upload Document</button>
+            </div>
+
         </div>
+        <button id="add-subject-btn" class="add-subject-btn">Add Subject</button>
+        <p>Use the above sections to view, share, or upload learning materials. Select a subject to get started.</p>
+    </section>
 
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Java Programming</h3>
-            <ul>
-                <li><a href="#">Lesson 1: Java Introduction</a></li>
-                <li><a href="#">Exercise 1: Java OOP</a></li>
-                <li><a href="#">Reference: Java Documentation</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Python Programming</h3>
-            <ul>
-                <li><a href="#">Lesson 1: Python Basics</a></li>
-                <li><a href="#">Exercise 1: Python for Data Science</a></li>
-                <li><a href="#">Reference: Python Official Docs</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Front-End Engineering (FEE)</h3>
-            <ul>
-                <li><a href="#">Lesson 1: HTML & CSS</a></li>
-                <li><a href="#">Exercise 1: Building Responsive Pages</a></li>
-                <li><a href="#">Reference: FEE Guide</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Data Structures and Algorithms</h3>
-            <ul>
-                <li><a href="#">Lesson: Introduction to Data Structures</a></li>
-                <li><a href="#">Exercise: Implementing Linked Lists</a></li>
-                <li><a href="#">Reference: Data Structures Reference Guide</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Database Management Systems</h3>
-            <ul>
-                <li><a href="#">Lesson: SQL Basics</a></li>
-                <li><a href="#">Exercise: Creating and Managing Databases</a></li>
-                <li><a href="#">Reference: Database Management Systems Documentation</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Web Development</h3>
-            <ul>
-                <li><a href="#">Lesson: Introduction to Web Development</a></li>
-                <li><a href="#">Exercise: Building a Simple Website</a></li>
-                <li><a href="#">Reference: Web Development Resources</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Software Engineering</h3>
-            <ul>
-                <li><a href="#">Lesson: Software Development Life Cycle</a></li>
-                <li><a href="#">Exercise: Agile Methodologies</a></li>
-                <li><a href="#">Reference: Software Engineering Principles</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Operating Systems</h3>
-            <ul>
-                <li><a href="#">Lesson: Introduction to Operating Systems</a></li>
-                <li><a href="#">Exercise: Process Management</a></li>
-                <li><a href="#">Reference: Operating Systems Concepts</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-        <div class="subject">
-            <h3><i class="fa-solid fa-book"></i> Networking Fundamentals</h3>
-            <ul>
-                <li><a href="#">Lesson: Basics of Networking</a></li>
-                <li><a href="#">Exercise: Setting Up a Local Network</a></li>
-                <li><a href="#">Reference: Networking Protocols and Standards</a></li>
-            </ul>
-            <button class="upload-btn">Upload Document</button>
-        </div>
-
-    </div>
-    <button id="add-subject-btn" class="add-subject-btn">Add Subject</button>
-    <p>Use the above sections to view, share, or upload learning materials. Select a subject to get started.</p>
-</section>
-
-<footer>
-    <p>23130081 - Tran Quang Duy</p>
-</footer>
+    <footer>
+        <p>23130081 - Tran Quang Duy</p>
+    </footer>
 
 </body>
+
 </html>

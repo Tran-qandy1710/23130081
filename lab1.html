@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <header>
@@ -17,9 +19,11 @@
                 <li>
                     <a href="labs.html">Labs</a>
                     <ul class="submenu2">
-                        <li><a href="lab1.html">Lab1</a></li>
+                        <li><a href="lab1.html" class="active">Lab1</a></li>
                         <li><a href="lab2.html">Lab2</a></li>
                         <li><a href="lab3.html">Lab3</a></li>
+                        <li> <a href="lab4.html">Lab4</a></li>
+
                     </ul>
                 </li>
                 <li>
@@ -39,6 +43,7 @@
             <a href="lab1.html" class="active">Lab1</a>
             <a href="lab2.html">Lab2</a>
             <a href="lab3.html">Lab3</a>
+            <a href="lab4.html">Lab4</a>
         </div>
     </nav>
 
@@ -48,7 +53,7 @@
         <div class="form-container">
             <h2>Create / Update Course</h2>
             <form id="courseForm" onsubmit="handleCourseSubmit(event)">
-                <input type="hidden" id="courseId" value=""/>
+                <input type="hidden" id="courseId" value="" />
 
                 <label for="courseName">Course Name (Required):</label>
                 <input type="text" id="courseName" required maxlength="255">
@@ -99,4 +104,5 @@
     </footer>
 
 </body>
+
 </html>

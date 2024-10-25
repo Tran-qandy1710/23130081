@@ -23,7 +23,7 @@ function addMember() {
 
 function renderMemberList() {
     const memberList = document.getElementById('memberList');
-    memberList.innerHTML = ''; 
+    memberList.innerHTML = '';
 
     members.forEach((member, index) => {
         memberList.innerHTML += `
@@ -54,13 +54,13 @@ function editMember(index) {
 
 function searchMember() {
     const searchTerm = document.getElementById('searchMember').value.toLowerCase();
-    const filteredMembers = members.filter(member => 
-        member.name.toLowerCase().includes(searchTerm) || 
+    const filteredMembers = members.filter(member =>
+        member.name.toLowerCase().includes(searchTerm) ||
         member.email.toLowerCase().includes(searchTerm)
     );
 
     const memberList = document.getElementById('memberList');
-    memberList.innerHTML = ''; 
+    memberList.innerHTML = '';
 
     filteredMembers.forEach((member, index) => {
         memberList.innerHTML += `
@@ -273,8 +273,8 @@ function renderFilteredExercises(filteredExercises) {
 function searchExercises() {
     const searchTerm = document.getElementById('search').value.toLowerCase();
     const searchedExercises = exercises.filter(exercise => {
-        return exercise.title.toLowerCase().includes(searchTerm) || 
-               exercise.description.toLowerCase().includes(searchTerm);
+        return exercise.title.toLowerCase().includes(searchTerm) ||
+            exercise.description.toLowerCase().includes(searchTerm);
     });
     renderFilteredExercises(searchedExercises);
 }
@@ -322,3 +322,31 @@ function backToDashboard() {
     document.getElementById('exercise-details').style.display = 'none';
     document.getElementById('dashboard').style.display = 'block';
 }
+
+//lab4
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+
+function toggleSection(section) {
+    // Toggle active class to show/hide content
+    section.classList.toggle('active');
+
+    // Show/hide additional content within the section
+    const content = section.querySelector('.content');
+    if (content) {
+        content.style.display = section.classList.contains('active') ? 'block' : 'none';
+    }
+}
+
+// Add click event listeners to each section for toggling
+$$('.section').forEach(section => {
+    section.addEventListener('click', () => {
+        toggleSection(section);
+    });
+
+    // Initialize content display based on the active class
+    const content = section.querySelector('.content');
+    if (content) {
+        content.style.display = section.classList.contains('active') ? 'block' : 'none';
+    }
+});
