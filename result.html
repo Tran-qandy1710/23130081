@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="assets/css/result.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="labs.html">Labs</a>
+
+                <li>
+                    <a href="#">Lab</a>
+                    <ul class="submenu">
+                        <li><a href="requirement.html">Requirement</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="gym-management.html">Implement</a></li>
+                    </ul>
+                </li>
+                <li><a href="result.html">Result</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="labs" style="height: 100%;">
+        <div id="fix-bug">
+            <div class="tabs">
+                <button class="tab-button" onclick="openTab(event, 'Lab1'); toggleForm('lab1-container')">Chức năng 1</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab2'); toggleForm('lab2-container')">Chức năng 2</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab3'); toggleForm('lab3-container')">Chức năng 3</button>
+            </div>
+
+            <div id="Lab1" class="tab-content" style="display: block;">
+                <p>Chức năng Login/Register/Forgot password</p>
+                <a href="https://hci2023group18.github.io/HCI-Group18/login.html" target="_blank">Lab details</a>
+                <div id="lab1-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="https://hci2023group18.github.io/HCI-Group18/login.html"></iframe>
+                </div>
+            </div>
+
+
+            <div id="Lab2" class="tab-content" style="display: none;">
+                <p>Chức năng Search</p>
+                <a href="https://hci2023group18.github.io/HCI-Group18/index.html">Lab details</a>
+                <div id="lab2-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="https://hci2023group18.github.io/HCI-Group18/index.html"></iframe>
+                </div>
+            </div>
+
+            <div id="Lab3" class="tab-content" style="display: none;">
+                <a href="#">Lab details</a>
+                <div id="lab3-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="#"></iframe>
+                </div>
+            </div>
+
+            <script>
+                // Function to toggle the visibility of the form
+                function toggleForm(formId) {
+                    const formContainer = document.getElementById(formId);
+                    if (formContainer) {
+                        formContainer.style.display = "block";
+                    }
+                }
+
+
+                // Function to switch tabs
+                function openTab(evt, tabName) {
+                    var i, tabContent, tabButtons;
+                    tabContent = document.getElementsByClassName("tab-content");
+                    for (i = 0; i < tabContent.length; i++) {
+                        tabContent[i].style.display = "none";
+                    }
+                    tabButtons = document.getElementsByClassName("tab-button");
+                    for (i = 0; i < tabButtons.length; i++) {
+                        tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                    evt.currentTarget.className += " active";
+                }
+            </script>
+        </div>
+
+        </script>
+        <footer>
+            <p>23130081 - Tran Quang Duy</p>
+        </footer>
+
+</body>
+
+</html>
