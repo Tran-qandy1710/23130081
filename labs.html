@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Labs</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/labs.css">
 </head>
 
 <body>
-
     <header>
         <nav>
             <ul>
@@ -17,13 +16,6 @@
                 <li><a href="about.html">About</a></li>
                 <li>
                     <a href="labs.html">Labs</a>
-                    <ul class="submenu2">
-                        <li><a href="lab1.html">Lab1</a></li>
-                        <li> <a href="lab2.html">Lab2</a></li>
-                        <li> <a href="lab3.html">Lab3</a></li>
-                        <li> <a href="lab4.html">Lab4</a></li>
-
-                    </ul>
                 <li>
                     <a href="#">Lab</a>
                     <ul class="submenu">
@@ -36,18 +28,88 @@
         </nav>
     </header>
 
-    <nav id="nav2">
-        <div id="nav2-tab">
-            <a href="lab1.html">Lab1</a>
-            <a href="lab2.html">Lab2</a>
-            <a href="lab3.html">Lab3</a>
-            <a href="lab4.html">Lab4</a>
+    <div id="labs" style="height: 100%;">
+        <div id="fix-bug">
+            <div class="tabs">
+                <button class="tab-button" onclick="openTab(event, 'Lab1'); toggleForm('lab1-container')">Lab 1</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab2'); toggleForm('lab2-container')">Lab 2</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab3'); toggleForm('lab3-container')">Lab 3</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab4'); toggleForm('lab4-container')">Lab 4</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab5'); toggleForm('lab5-container')">Lab 5</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab6'); toggleForm('lab6-container')">Lab 6</button>
+            </div>
 
+            <div id="Lab1" class="tab-content active" style="display: block;">
+                <a href="lab1.html">Lab details</a>
+                <div id="lab1-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="lab1.html"></iframe>
+                </div>
+            </div>
+
+            <div id="Lab2" class="tab-content" style="display: none;">
+                <a href="lab2.html">Lab details</a>
+                <div id="lab2-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="lab2.html"></iframe>
+                </div>
+            </div>
+
+            <div id="Lab3" class="tab-content" style="display: none;">
+                <a href="lab3/lab3.html">Lab details</a>
+                <div id="lab3-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="lab3.html"></iframe>
+                </div>
+            </div>
+
+            <div id="Lab4" class="tab-content" style="display: none;">
+                <a href="lab4/lab4.html">Lab details</a>
+                <div id="lab4-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="lab4.html"></iframe>
+                </div>
+            </div>
+
+            <div id="Lab5" class="tab-content" style="display: none;">
+                <a href="lab5/index.html">Lab details</a>
+                <div id="lab5-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="lab5.html"></iframe>
+                </div>
+            </div>
+
+            <div id="Lab6" class="tab-content" style="display: none;">
+                <a href="lab6/index.html">Lab details</a>
+                <div id="lab6-container" class="lab-content-form" style="display: none;">
+                    <iframe class="lab1-iframe" src="lab6.html"></iframe>
+                </div>
+            </div>
         </div>
-    </nav>
+
+        <script>
+            // Function to toggle the visibility of the form
+            function toggleForm(formId) {
+                const formContainer = document.getElementById(formId);
+                if (formContainer) {
+                    formContainer.style.display = "block"; 
+                }
+            }
 
 
+            // Function to switch tabs
+            function openTab(evt, tabName) {
+                var i, tabContent, tabButtons;
+                tabContent = document.getElementsByClassName("tab-content");
+                for (i = 0; i < tabContent.length; i++) {
+                    tabContent[i].style.display = "none";
+                }
+                tabButtons = document.getElementsByClassName("tab-button");
+                for (i = 0; i < tabButtons.length; i++) {
+                    tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+                }
+                document.getElementById(tabName).style.display = "block";
+                evt.currentTarget.className += " active";
+            }
+        </script>
+    </div>
 
+    </script>
     <footer>
         <p>23130081 - Tran Quang Duy</p>
     </footer>

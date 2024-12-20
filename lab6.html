@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development course</title>
+    <link rel="stylesheet" href="assets/css/lab6.css">
+    <script src="assets/js/lab6.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <button class="scroll-arrow previous-arrow" onclick="scrollPrevious()">
+            &#9664;
+        </button>
+
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <button class="filter-button active">
+                <span class="filter-text">Web Development</span>
+                <span class="learner-count">13.3M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">JavaScript</span>
+                <span class="learner-count">17.7M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">React JS</span>
+                <span class="learner-count">7M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Angular</span>
+                <span class="learner-count">4M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Java</span>
+                <span class="learner-count">15.5M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Android Development</span>
+                <span class="learner-count">8M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">iOS Development</span>
+                <span class="learner-count">4M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">CSS</span>
+                <span class="learner-count">9M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Python</span>
+                <span class="learner-count">12M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Data Science</span>
+                <span class="learner-count">6M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Machine Learning</span>
+                <span class="learner-count">5M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">AI</span>
+                <span class="learner-count">3M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Cybersecurity</span>
+                <span class="learner-count">2M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Cloud Computing</span>
+                <span class="learner-count">4.5M+ learners</span>
+            </button>
+            <button class="filter-button">
+                <span class="filter-text">Big Data</span>
+                <span class="learner-count">1M+ learners</span>
+            </button>
+        </div>
+
+        <button class="scroll-arrow next-arrow" onclick="scrollNext()">
+            &#9654;
+        </button>
+    </div>
+
+
+    <!-- Course Cards Section -->
+    <div class="container">
+        <button class="course-card course-scroll-arrow previous-course-arrow" onclick="scrollCourseCardPrevious()">
+            &#9664;
+        </button>
+        <div class="course-cards">
+            <div class="course-card">
+                <img src="assets/images/course1.png" alt="Course Image">
+                <div class="course-info">
+                    <h3>The Complete 2024 Web Development Bootcamp</h3>
+                    <p>Dr. Angela Yu, Developer and Lead Instructor</p>
+                    <div class="rating-price">
+                        <span class="rating">4.7 ★ (409,451)</span>
+                        <span class="price">₫1,699,000</span>
+                    </div>
+                    <span class="bestseller">Bestseller</span>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="assets/images/course2.png" alt="Course Image">
+                <div class="course-info">
+                    <h3>The Web Developer Bootcamp 2024</h3>
+                    <p>Colt Steele</p>
+                    <div class="rating-price">
+                        <span class="rating">4.7 ★ (276,674)</span>
+                        <span class="price">₫2,399,000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="assets/images/course3.jpg" alt="Course Image">
+                <div class="course-info">
+                    <h3>Web Development Masterclass - Online Certification Course</h3>
+                    <p>YouAccel Training</p>
+                    <div class="rating-price">
+                        <span class="rating">4.3 ★ (10,005)</span>
+                        <span class="price">₫1,499,000</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 4 -->
+            <div class="course-card">
+                <img src="assets/images/course4.jpg" alt="Course Image">
+                <div class="course-info">
+                    <h3>The Complete Web Developer Course 3.0</h3>
+                    <p>Rob Percival, Codestars • over 2 million students</p>
+                    <div class="rating-price">
+                        <span class="rating">4.5 ★ (72,294)</span>
+                        <span class="price">₫2,199,000</span>
+
+                    </div>
+                </div>
+            </div>
+            <div class="course-card">
+                <img src="assets/images/course5.png" alt="Course Image">
+                <div class="course-info">
+                    <h3>Internet and Web Development Fundamentals</h3>
+                    <p>YouAccel Training</p>
+                    <div class="rating-price">
+                        <span class="rating">4.4 ★ (1,746)</span>
+                        <span class="price">₫449,000</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 6 -->
+            <div class="course-card">
+                <img src="assets/images/course6.png" alt="Course Image">
+                <div class="course-info">
+                    <h3>Hovelop mer Pet Works & the Web</h3>
+                    <p>YouAccel Training</p>
+                    <div class="rating-price">
+                        <span class="rating">4.3 ★ (1,803)</span>
+                        <span class="price">₫449,000</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Course 7 -->
+            <div class="course-card">
+                <img src="assets/images/course7.png" alt="Course Image">
+                <div class="course-info">
+                    <h3>The Complete 2023 PHP Full Stack Web Developer Bootcamp</h3>
+                    <p>Srini Vanamala</p>
+                    <div class="rating-price">
+                        <span class="rating">4.3 ★ (5,383)</span>
+                        <span class="price">₫1,899,000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="course-card course-scroll-arrow next-course-arrow" onclick="scrollCourseCardNext()">
+            &#9654;
+        </button>
+    </div>
+    <!-- Show All Button -->
+    <div class="container">
+        <button class="show-all-button">Show all Web Development courses</button>
+    </div>
+</body>
+
+</html>

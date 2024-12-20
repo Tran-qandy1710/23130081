@@ -1,0 +1,375 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: white;
+    margin: 0;
+}
+
+.header {
+    background-color: #3a3a3a;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header h1 {
+    font-size: 32px;
+    padding-left: 20px;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.header p {
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+.header .watched {
+    font-size: 15px;
+    color: #ccc;
+}
+
+.header .view-activity {
+    font-size: 15px;
+    margin-left: 0;
+    color: #ececec;
+    text-decoration: none;
+}
+
+.nav {
+    display: flex;
+    gap: 16px;
+    padding: 0px 20px;
+    background-color: #3a3a3a;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    color: #9ca3af;
+    cursor: pointer;
+    padding-bottom: 8px;
+    font-size: 16px;
+}
+
+.nav-button.active {
+    color: white;
+    border-bottom: 5px solid white;
+}
+
+.nav-button:hover {
+    color: white;
+}
+
+.content {
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section {
+    margin-bottom: 30px;
+    display: none;
+}
+
+/* Display currently active section */
+.section.active {
+    display: block;
+}
+
+/* My Badges Section */
+.my-badges {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.my-badges h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.my-badges p {
+    font-size: 15px;
+    color: #555;
+}
+
+.import-badge-btn {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    float: right;
+}
+
+.import-badge-btn:hover {
+    background-color: #7c3aed;
+}
+
+
+/* Certification Preparation Section */
+.certification-preparation {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.certification-preparation h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.certification-preparation p {
+    font-size: 15px;
+    color: #555;
+}
+
+.certification-header {
+    display: flex;
+    justify-content: space-between;
+    /* Space between paragraph and button */
+    align-items: center;
+    /* Center vertically */
+    margin-bottom: 15px;
+    /* Add some spacing below the header */
+}
+
+.explore-btn {
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    color: black;
+    width: 300px;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.explore-btn:hover {
+    background-color: #707070;
+}
+
+.cert-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.cert-item {
+    display: flex;
+    width: calc(50% - 20px);
+    /* Two items per row with gap */
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    position: relative;
+}
+
+.cert-item :hover {
+    background-color: #cccccc;
+}
+
+.cert-header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.ellipsis-btn {
+    background: rgb(223, 223, 223);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+.cert-image {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.cert-details {
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.cert-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    color: #333;
+}
+
+.cert-provider {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+/* Archived Section */
+
+
+.section.archived {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.archived-item {
+    width: calc(25% - 100px);
+    height: 300px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.archived-item:hover {
+    background-color: #f0f0f0;
+}
+
+.archived-image {
+    width: 100%;
+    height: auto;
+    max-height: 198px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.archived-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.archived-provider {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.progress-bar {
+    background-color: #e5e7eb;
+    border-radius: 4px;
+    height: 5px;
+    width: 100%;
+    margin: 8px 0;
+}
+
+.progress {
+    background-color: #3b82f6;
+    height: 100%;
+    border-radius: 4px;
+}
+
+.completion-status {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 4px;
+}
+
+.rating {
+    font-size: 14px;
+    color: #555;
+}
+
+.rating .star {
+    color: #f59e0b;
+}
+
+.archived-header {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.ellipsis-btn {
+    background: rgb(223, 223, 223);
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #555;
+}
+
+
+
+/* Learning Tools Section */
+.learning-tools {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.learning-tools h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.learning-tools p {
+    font-size: 15px;
+    color: #555;
+}
+
+.learning-tool-item {
+    width: calc(50% - 30px); /* Two items per row */
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between items */
+    cursor: pointer;
+    display: inline-block; /* Align items next to each other */
+    vertical-align: top; /* Align items to the top */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.learning-tool-item:hover {
+    background-color: #f0f0f0; /* Light grey on hover */
+}
+
+.learning-tool-item .tool-icon {
+    font-size: 40px; /* Icon size */
+    color: #3b82f6; /* Blue color for the icon */
+    margin-bottom: 10px;
+}
+
+.learning-tool-item .tool-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.learning-tool-item .tool-description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px; /* Space below description */
+}
+
+.learning-tool-item .tool-status {
+    font-size: 12px;
+    color: #999; /* Lighter color for status message */
+}

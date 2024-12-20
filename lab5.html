@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform</title>
+    <link rel="stylesheet" href="assets/css/lab5.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>My learning</h1>
+    </div>
+    <div class="header">
+        <p>87hr 36min <span class="watched">watched</span></p>
+        <i style="font-size:16px" class="fa">&#xf05a;</i>
+        <a href="#" class="view-activity">View all activity</a>
+    </div>
+    <nav class="nav">
+        <button class="nav-button">All courses</button>
+        <button class="nav-button">Learning paths</button>
+        <button class="nav-button active" data-tab="certifications">Certifications</button>
+        <button class="nav-button" data-tab="archived">Archived</button>
+        <button class="nav-button" data-tab="tools">Learning tools</button>
+    </nav>
+
+
+
+    <div class="content">
+
+        <!-- My Badges Section -->
+        <div class="section my-badges">
+            <h2>My badges</h2>
+            <button class="import-badge-btn">Import new badge</button>
+            <p>You have earned and uploaded <strong>0 badges</strong>
+                <i style="font-size:16px" class="fa">&#xf05a;</i>
+            </p>
+            <p>Currently, there are no badges uploaded to your profile. Begin your journey towards certification
+                goals or <a href="#">upload your third-party</a> badges to your profile and impress your manager and
+                peers with your accomplishments.
+                Start preparing for your next certificate today!.</p>
+        </div>
+
+        <!-- Certification Preparation Section -->
+        <div class="section certification-preparation">
+            <h2>Certification preparation</h2>
+            <div class="certification-header">
+                <p>You are preparing for <strong>4 certifications</strong>
+                    <i style="font-size:16px" class="fa">&#xf05a;</i>
+                </p>
+                <button class="explore-btn">Explore certification preparation</button>
+            </div>
+
+            <div class="cert-list">
+                <div class="cert-item">
+                    <div class="cert-header">
+                        <button class="ellipsis-btn">⋮</button>
+                    </div>
+                    <img src="assets/images/oracle_cert.png" alt="Oracle Certification" class="cert-image">
+                    <div class="cert-details">
+                        <div class="cert-title">Oracle Certified Associate, Java SE 8 Programmer</div>
+                        <div class="cert-provider">Oracle</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-header">
+                        <button class="ellipsis-btn">⋮</button>
+                    </div>
+                    <img src="assets/images/istqb_cert.png" alt="ISTQB Certification" class="cert-image">
+                    <div class="cert-details">
+                        <div class="cert-title">ISTQB® Certified Tester Foundation Level (CTFL)</div>
+                        <div class="cert-provider">Brightest</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-header">
+                        <button class="ellipsis-btn">⋮</button>
+                    </div>
+                    <img src="assets/images/aws_cert.png" alt="AWS Certification" class="cert-image">
+                    <div class="cert-details">
+                        <div class="cert-title">AWS Certified Solutions Architect – Associate</div>
+                        <div class="cert-provider">Amazon Web Services</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-header">
+                        <button class="ellipsis-btn">⋮</button>
+                    </div>
+                    <img src="assets/images/cisco_cert.png" alt="Cisco Certification" class="cert-image">
+                    <div class="cert-details">
+                        <div class="cert-title">Cisco Certified Network Associate (CCNA)</div>
+                        <div class="cert-provider">Cisco</div>
+                    </div>
+                </div>
+                <div class="cert-item">
+                    <div class="cert-header">
+                        <button class="ellipsis-btn">⋮</button>
+                    </div>
+                    <img src="assets/images/pmp_cert.png" alt="PMP Certification" class="cert-image">
+                    <div class="cert-details">
+                        <div class="cert-title">Project Management Professional (PMP)</div>
+                        <div class="cert-provider">Project Management Institute</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="section archived">
+            <div class="archived-item">
+                <div class="archived-header">
+                    <button class="ellipsis-btn">⋮</button>
+                </div>
+                <img src="assets/images/csr_training.png" alt="CSR Training" class="archived-image">
+                <div class="archived-title">FPT_Corporate Social Responsibility Training 2024</div>
+                <div class="archived-provider">FSOFT Content Development</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%;"></div>
+                </div>
+                <div class="completion-status">100% complete</div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+
+            <div class="archived-item">
+                <div class="archived-header">
+                    <button class="ellipsis-btn">⋮</button>
+                </div>
+                <img src="assets/images/cyber_security.png" alt="Cyber Security Training" class="archived-image">
+                <div class="archived-title">Cyber Security Fundamentals</div>
+                <div class="archived-provider">CyberTech Academy</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 85%;"></div>
+                </div>
+                <div class="completion-status">85% complete</div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+
+            <div class="archived-item">
+                <div class="archived-header">
+                    <button class="ellipsis-btn">⋮</button>
+                </div>
+                <img src="assets/images/data_science.png" alt="Data Science" class="archived-image">
+                <div class="archived-title">Data Science Bootcamp</div>
+                <div class="archived-provider">TechPro Institute</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 100%;"></div>
+                </div>
+                <div class="completion-status">100% complete</div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                </div>
+            </div>
+
+            <div class="archived-item">
+                <div class="archived-header">
+                    <button class="ellipsis-btn">⋮</button>
+                </div>
+                <img src="assets/images/ml_training.png" alt="Machine Learning" class="archived-image">
+                <div class="archived-title">Machine Learning for Beginners</div>
+                <div class="archived-provider">AI Global Institute</div>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 60%;"></div>
+                </div>
+                <div class="completion-status">60% complete</div>
+                <div class="rating">
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">★</span>
+                    <span class="star">☆</span>
+                    <span class="star">☆</span>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Learning Tools Section -->
+        <div class="section learning-tools">
+            <h2>Learning Tools</h2>
+            <p>Explore a diverse range of courses and take advantage of these versatile tools to gain knowledge, skills,
+                and confidence at your own pace.</p>
+
+            <div class="learning-tool-item">
+                <div class="tool-icon">
+                    <i class="fas fa-clock"></i>
+                </div>
+                <div class="tool-title">Learning Reminders</div>
+                <div class="tool-description">Set time aside to learn and get reminders using your scheduler.</div>
+                <div class="tool-status">You currently have no ongoing reminders.</div>
+            </div>
+
+            <div class="learning-tool-item">
+                <div class="tool-icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="tool-title">Reflections</div>
+                <div class="tool-description">Take time to reflect to strengthen your learning.</div>
+                <div class="tool-status">You have currently no recorded reflections on your learning journey.</div>
+            </div>
+        </div>
+
+</body>
+
+<script>
+    const navButtons = document.querySelectorAll('.nav-button');
+    const sections = {
+        certifications: document.querySelector('.certification-preparation'),
+        archived: document.querySelector('.archived'),
+        tools: document.querySelector('.learning-tools'),
+        badges: document.querySelector('.my-badges')
+    };
+
+    // Function to hide all sections
+    function hideAllSections() {
+        Object.values(sections).forEach(section => section.style.display = 'none');
+    }
+
+    // Event listener for navigation buttons
+    navButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons and add to clicked one
+            navButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            // Hide all sections first
+            hideAllSections();
+
+            // Show the appropriate section based on the clicked button
+            const tab = button.getAttribute('data-tab');
+            if (tab === 'certifications') {
+                sections.certifications.style.display = 'block';
+                sections.badges.style.display = 'block'; // Keep badges visible when showing certifications
+            } else if (tab === 'archived') {
+                sections.archived.style.display = 'block';
+            } else if (tab === 'tools') {
+                sections.tools.style.display = 'block';
+            }
+        });
+    });
+
+    // Set default view on page load
+    hideAllSections(); // Hide all sections initially
+    sections.certifications.style.display = 'block'; // Show certifications
+    sections.badges.style.display = 'block'; // Display badges initially
+
+</script>
+
+</html>

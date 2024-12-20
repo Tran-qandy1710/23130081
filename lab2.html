@@ -4,53 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab 2 - Course Management System</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/lab2.css">
+
+    <script src="assets/js/scripts.js" defer></script>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li>
-                    <a href="labs.html">Labs</a>
-                    <ul class="submenu2">
-                        <li><a href="lab1.html">Lab1</a></li>
-                        <li><a href="lab2.html" class="active">Lab2</a></li>
-                        <li><a href="lab3.html">Lab3</a></li>
-                        <li> <a href="lab4.html">Lab4</a></li>
-
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">Lab</a>
-                    <ul class="submenu">
-                        <li><a href="requirement.html">Requirement</a></li>
-                        <li><a href="design.html">Design</a></li>
-                        <li><a href="gym-management.html">Implement</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </header>
-
-    <nav id="nav2">
-        <div id="nav2-tab">
-            <a href="lab1.html">Lab1</a>
-            <a href="lab2.html" class="active">Lab2</a>
-            <a href="lab3.html">Lab3</a>
-            <a href="lab4.html">Lab4</a>
-
-        </div>
-    </nav>
-
     <main>
         <section id="login-section">
-            <h2>Login</h2>
+            
             <form id="login-form" onsubmit="authenticate(event)">
                 <label for="username">Username/Email:</label>
                 <input type="text" id="username" required>
@@ -98,9 +62,7 @@
         </section>
     </main>
 
-    <footer>
-        <p>23130081 - Tran Quang Duy</p>
-    </footer>
+    
 
 </body>
 
