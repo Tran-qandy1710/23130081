@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/contact.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="labs.html">Labs</a>
+
+                <li>
+                    <a href="#">Lab</a>
+                    <ul class="submenu">
+                        <li><a href="requirement.html">Requirement</a></li>
+                        <li><a href="design.html">Design</a></li>
+                        <li><a href="gym-management.html">Implement</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="result.html">Result</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="container-contact100">
+        <div class="wrap-contact100">
+            <form class="contact100-form validate-form">
+                <span class="contact100-form-title">Contact Us</span>
+
+                <div class="wrap-input100 validate-input bg1" data-validate="Please Type Your Name">
+                    <span class="label-input100">FULL NAME *</span>
+                    <input class="input100" type="text" name="name" placeholder="Enter Your Name">
+                </div>
+
+                <div class="wrap-input100 validate-input bg1 rs1-wrap-input100"
+                    data-validate="Enter Your Email (e@a.x)">
+                    <span class="label-input100">Email *</span>
+                    <input class="input100" type="text" name="email" placeholder="Enter Your Email">
+                </div>
+
+                <div class="wrap-input100 bg1 rs1-wrap-input100">
+                    <span class="label-input100">Phone</span>
+                    <input class="input100" type="text" name="phone" placeholder="Enter Number Phone">
+                </div>
+
+                <div class="wrap-input100 input100-select bg1">
+                    <span class="label-input100">Needed Services *</span>
+                    <select class="js-select2" name="service">
+                        <option>Work</option>
+                        <option>Study</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <div class="wrap-input100 validate-input bg0" data-validate="Please Type Your Message">
+                    <span class="label-input100">Message</span>
+                    <textarea class="input100" name="message" placeholder="Your message here..."></textarea>
+                </div>
+
+                <div class="container-contact100-form-btn">
+                    <button class="contact100-form-btn">
+                        <span>
+                            Submit
+                            <i class="fa fa-long-arrow-right"></i>
+                        </span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.js-select2').select2();
+        });
+    </script>
+</body>
+
+</html>

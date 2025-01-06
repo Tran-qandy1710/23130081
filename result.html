@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
     <link rel="stylesheet" href="assets/css/result.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -25,22 +27,34 @@
                         <li><a href="gym-management.html">Implement</a></li>
                     </ul>
                 </li>
+                <li><a href="contact.html">Contact</a></li>
                 <li><a href="result.html">Result</a></li>
             </ul>
         </nav>
     </header>
 
+    <div class="container mt-3">
+        <h2>Tự đánh giá</h2>
+        <p>Bạn đã tự đánh giá đóng góp của bản thân là 20%.</p>
+        <div class="progress">
+            <div class="progress-bar" style="width:20%">20%</div>
+        </div>
+    </div>
+
     <div id="labs" style="height: 100%;">
         <div id="fix-bug">
             <div class="tabs">
-                <button class="tab-button" onclick="openTab(event, 'Lab1'); toggleForm('lab1-container')">Chức năng 1</button>
-                <button class="tab-button" onclick="openTab(event, 'Lab2'); toggleForm('lab2-container')">Chức năng 2</button>
-                <button class="tab-button" onclick="openTab(event, 'Lab3'); toggleForm('lab3-container')">Chức năng 3</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab1'); toggleForm('lab1-container')">Chức năng
+                    1</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab2'); toggleForm('lab2-container')">Chức năng
+                    2</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab3'); toggleForm('lab3-container')">Chức năng
+                    3</button>
             </div>
 
             <div id="Lab1" class="tab-content" style="display: block;">
                 <p>Chức năng Login/Register/Forgot password</p>
-                <a href="https://hci2023group18.github.io/HCI-Group18/login.html" target="_blank">Lab details</a>
+                <a href="https://hci2023group18.github.io/HCI-Group18/login.html" target="_blank">Function details</a>
                 <div id="lab1-container" class="lab-content-form" style="display: none;">
                     <iframe class="lab1-iframe" src="https://hci2023group18.github.io/HCI-Group18/login.html"></iframe>
                 </div>
@@ -49,15 +63,17 @@
 
             <div id="Lab2" class="tab-content" style="display: none;">
                 <p>Chức năng Search</p>
-                <a href="https://hci2023group18.github.io/HCI-Group18/index.html">Lab details</a>
+                <a href="https://hci2023group18.github.io/HCI-Group18/index.html">Function details</a>
                 <div id="lab2-container" class="lab-content-form" style="display: none;">
-                    <iframe class="lab1-iframe" src="https://hci2023group18.github.io/HCI-Group18/index.html"></iframe>
+                    <img src="assets/images/search1.png" alt="Search Functionality Image 1" class="lab1-img">
+                    <img src="assets/images/search2.png" alt="Search Functionality Image 2" class="lab1-img">
                 </div>
             </div>
+            
 
             <div id="Lab3" class="tab-content" style="display: none;">
-                <p>Chức năng Location tích hợp Google maps</p>
-                <a href="https://hci2023group18.github.io/HCI-Group18/location.html">Lab details</a>
+                <p>Chức năng Location</p>
+                <a href="https://hci2023group18.github.io/HCI-Group18/location.html">Function details</a>
                 <div id="lab3-container" class="lab-content-form" style="display: none;">
                     <iframe class="lab1-iframe" src="https://hci2023group18.github.io/HCI-Group18/location.html"></iframe>
                 </div>
