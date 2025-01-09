@@ -1,12 +1,13 @@
 /**body**/
 body {
-  font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   color: #333;
   height: 100%;
   margin: 0;
   display: flex;
   flex-direction: column;
+  font-family: 'Times New Roman' !important;
+
 }
 
 p,

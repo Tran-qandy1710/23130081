@@ -122,6 +122,10 @@ section,
     margin-bottom: 20px;
 }
 
+.fables-footer-social-links i {
+    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+}
+
 /*button*/
 button {
     padding: 10px 20px;
@@ -235,172 +239,39 @@ tbody tr:hover {
     border: 1px solid #ccc;
 }
 
-.fables-footer-social-links i {
-    font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands' !important;
+/*cv*/
+.container-fluid {
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
-
-footer {
+.sidebar {
     background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-    margin-top: auto;
-}
-
-/*button*/
-button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
     color: white;
-    background-color: #28a745;
-    transition: background-color 0.3s;
-    margin-right: 10px;
+    height: 100%; 
+    padding: 20px;
+    width: 300px;
+    flex-shrink: 0;
+    box-sizing: border-box; /* Đảm bảo padding không làm tăng kích thước thực tế của sidebar */
+    overflow-y: auto; /* Thêm scroll nếu nội dung vượt quá chiều cao viewport */
 }
 
-button:hover {
-    background-color: #218838;
+.sidebar h3 {
+    border-bottom: 1px solid #777;
+    padding-bottom: 10px;
 }
-
-button.delete {
+.progress-bar {
     background-color: #dc3545;
 }
-
-button.delete:hover {
-    background-color: #c82333;
+.content {
+    padding: 40px;
+    flex-grow: 1;
 }
-
-
-/* Tabs */
-.tabs {
-    display: flex;
-    margin-top: 2rem;
+.section {
+    margin-bottom: 30px;
 }
-
-.tab-button {
-    background-color: #f4f6f0;
-    color: #333;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 1rem 2rem;
-    transition: 0.3s;
-    font-size: 1rem;
+.section h3 {
+    margin-bottom: 15px;
 }
-
-.tab-button:hover {
-    background-color: #68e542;
-}
-
-.tab-button.active {
-    background-color: #68e542;
-    color: #ffffff;
-}
-
-.tab-content {
-    display: none;
-    padding: 2rem;
-    border: 1px solid #ccc;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-/* Lab Section */
-#labs {
-    width: 100%;
-}
-
-.blocks {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.block {
-    background-color: #f4f4f4;
-    flex: 1 1 22%;
-    min-width: 150px;
-    max-width: 22%;
-    padding: 0.5rem;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.block:hover {
-    transform: scale(1.05);
-}
-
-.block-icon {
-    font-size: 40px;
-    color: #555;
-    margin-bottom: 1rem;
-}
-
-.block h3 {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
-}
-
-.block p {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-/* Lab Content Forms */
-.lab-content-form {
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
-    position: relative;
-    overflow: hidden;
-    margin-top: 2rem;
-}
-
-.lab1-iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    border: none;
-    overflow: hidden;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .block {
-        flex: 1 1 45%;
-    }
-}
-
-@media (max-width: 480px) {
-    .block {
-        flex: 1 1 100%;
-    }
-}
-
-
-
-*,
-*::before,
-*::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-h1,
-h2 {
-    color: #444;
-    margin-bottom: 20px;
-}
-
-
