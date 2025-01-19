@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Result</title>
-    <link rel="stylesheet" href="assets/css/result.css">
-    <!-- Bootstrap CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Labs</title>
+    <link rel="stylesheet" href="assets/css/labs.css">
+
     <!-- animate.css-->
     <link href="assets/vendor/animate.css-master/animate.min.css" rel="stylesheet">
     <!-- Font Awesome 5 -->
@@ -22,7 +21,6 @@
     <!-- FABLES CUSTOM CSS RESPONSIVE FILE -->
     <link href="assets/custom/css/custom-responsive.css" rel="stylesheet">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -52,52 +50,65 @@
         </nav>
     </header>
 
-    <div class="container mt-3">
-        <h2>Tự đánh giá</h2>
-        <p>Bạn đã tự đánh giá đóng góp của bản thân là 20%.</p>
-        <div class="progress">
-            <div class="progress-bar" style="width:20%">20%</div>
-        </div>
-    </div>
-
     <div id="labs" style="height: 100%;">
         <div id="fix-bug">
             <div class="tabs">
-                <button class="tab-button" onclick="openTab(event, 'Lab1'); toggleForm('lab1-container')">Chức năng
-                    1</button>
-                <button class="tab-button" onclick="openTab(event, 'Lab2'); toggleForm('lab2-container')">Chức năng
-                    2</button>
-                <button class="tab-button" onclick="openTab(event, 'Lab3'); toggleForm('lab3-container')">Chức năng
-                    3</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab1'); toggleForm('lab1-container')">Lab 1</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab2'); toggleForm('lab2-container')">Lab 2</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab3'); toggleForm('lab3-container')">Lab 3</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab4'); toggleForm('lab4-container')">Lab 4</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab5'); toggleForm('lab5-container')">Lab 5</button>
+                <button class="tab-button" onclick="openTab(event, 'Lab6'); toggleForm('lab6-container')">Lab 6</button>
             </div>
 
-            <div id="Lab1" class="tab-content" style="display: block;">
-                <p>Chức năng Login/Register/Forgot password</p>
-                <a href="https://hci2023group18.github.io/HCI-Group18/login.html" target="_blank">Function details</a>
-                <div id="lab1-container" class="lab-content-form" style="display: none;">
-                    <iframe class="lab1-iframe" src="https://hci2023group18.github.io/HCI-Group18/login.html"></iframe>
+            <div id="Lab1" class="tab-content active" style="display: none;">
+                <div id="lab1-container" class="lab-content-form"
+                    style="display: none; text-align: center; height: auto;">
+                    <img src="assets/images/design_lab1.png" alt="Lab 1 Image"
+                        style="width: 60%; height: auto; max-width: 100%; border: 2px solid #000; padding: 10px;">
                 </div>
             </div>
-
 
             <div id="Lab2" class="tab-content" style="display: none;">
-                <p>Chức năng Search</p>
-                <a href="https://hci2023group18.github.io/HCI-Group18/index.html">Function details</a>
-                <div id="lab2-container" class="lab-content-form" style="display: none;">
-                    <img src="assets/images/search1.png" alt="Search Functionality Image 1" class="lab1-img">
-                    <img src="assets/images/search2.png" alt="Search Functionality Image 2" class="lab1-img">
+                <div id="lab2-container" class="lab-content-form"
+                    style="display: block; text-align: center;height: auto;">
+                    <img src="assets/images/design_lab2.png" alt="Lab 2 Image"
+                        style="width: 60%; height: auto; max-width: 100%; border: 2px solid #000; padding: 10px;">
                 </div>
             </div>
-
 
             <div id="Lab3" class="tab-content" style="display: none;">
-                <p>Chức năng Location</p>
-                <a href="https://hci2023group18.github.io/HCI-Group18/location.html">Function details</a>
-                <div id="lab3-container" class="lab-content-form" style="display: none;">
-                    <iframe class="lab1-iframe"
-                        src="https://hci2023group18.github.io/HCI-Group18/location.html"></iframe>
+                <div id="lab3-container" class="lab-content-form"
+                    style="display: block; text-align: center;height: auto;">
+                    <img src="assets/images/design_lab3.png" alt="Lab 3 Image"
+                        style="width: 60%; height: auto; max-width: 100%; border: 2px solid #000; padding: 10px;">
                 </div>
             </div>
+
+            <div id="Lab4" class="tab-content" style="display: none;">
+                <div id="lab4-container" class="lab-content-form"
+                    style="display: block; text-align: center;height: auto;">
+                    <img src="assets/images/design_lab4.png" alt="Lab 4 Image"
+                        style="width: 60%; height: auto; max-width: 100%; border: 2px solid #000; padding: 10px;">
+                </div>
+            </div>
+
+            <div id="Lab5" class="tab-content" style="display: none;">
+                <div id="lab5-container" class="lab-content-form"
+                    style="display: block; text-align: center;height: auto;">
+                    <img src="assets/images/design_lab5.png" alt="Lab 5 Image"
+                        style="width: 60%; height: auto; max-width: 100%; border: 2px solid #000; padding: 10px;">
+                </div>
+            </div>
+
+            <div id="Lab6" class="tab-content" style="display: none;">
+                <div id="lab6-container" class="lab-content-form"
+                    style="display: block; text-align: center;height: auto;">
+                    <img src="assets/images/design_lab6.png" alt="Lab 6 Image"
+                        style="width: 60%; height: auto; max-width: 100%; border: 2px solid #000; padding: 10px;">
+                </div>
+            </div>
+
 
             <script>
                 // Function to toggle the visibility of the form
@@ -127,8 +138,6 @@
         </div>
 
         </script>
-
-
         <!--Footer-->
         <div class="fables-footer-image fables-after-overlay white-color py-4 py-lg-5 bg-rules ">
             <div class="container">
@@ -187,8 +196,6 @@
         <script src="assets/vendor/video-background/jquery.mb.YTPlayer.js"></script>
         <script src="assets/custom/js/custom.js"></script>
 
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
