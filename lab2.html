@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/lab2.css">
-
     <script src="assets/js/scripts.js" defer></script>
 </head>
 
 <body>
-
     <main>
+        <!-- Login Section -->
         <section id="login-section">
-            
             <form id="login-form" onsubmit="authenticate(event)">
                 <label for="username">Username/Email:</label>
                 <input type="text" id="username" required>
@@ -27,6 +25,7 @@
             </form>
         </section>
 
+        <!-- Dashboard Section -->
         <section id="dashboard" style="display: none;">
             <h2>Dashboard</h2>
             <div id="filter">
@@ -42,6 +41,7 @@
             <div id="exercise-list"></div>
         </section>
 
+        <!-- Exercise Details Section -->
         <section id="exercise-details" style="display: none;">
             <h2 id="exercise-title"></h2>
             <p id="exercise-description"></p>
@@ -58,12 +58,16 @@
             <button onclick="clearCode()">Clear Code</button>
             <button onclick="submitCode()">Submit Code</button>
             <div id="output"></div>
+            <div id="results" style="display: none;">
+                <h3>Results</h3>
+                <div id="test-cases">
+                    <!-- Test case results will be dynamically inserted here -->
+                </div>
+                <p id="performance-metrics"></p>
+            </div>
             <button onclick="backToDashboard()">Return to Dashboard</button>
         </section>
     </main>
-
-    
-
 </body>
 
 </html>
